@@ -1,0 +1,154 @@
+*
+{
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.invisible
+{
+  display: none;
+}
+
+html, body
+{
+  height: auto;
+  min-height: 100%;
+}
+
+.main_container
+{
+  position: relative;
+
+  width: 100%;
+  min-width: 320px;
+  max-width: 640px;
+  margin: 0 auto;
+  height: auto;
+  min-height: 100%;
+
+  .top_bar
+  {
+    padding: 10px 15px;
+
+    border-bottom: 1px solid #f0f0f0;
+    background: #fafbfd url(../images/logo.png) calc(100% - 20px) center no-repeat;
+
+    .side_menu_button
+    {
+      position: absolute;
+
+      display: block;
+      width: 35px;
+      height: 27px;
+      top: 20px;
+      left: 20px;
+      opacity: 0.65;
+
+      cursor: pointer;
+
+      .button_image
+      {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .side_menu_button:hover
+    {
+      opacity: 0.3;
+    }
+
+    .top_bar_title {
+      display: block;
+      width: 100%;
+
+      font: 700 36px 'Roboto', tahoma, arial;
+      text-align: center;
+      color: #656e79;
+    }
+  }
+
+  .side_menu
+  {
+    position: absolute;
+    left: 0;
+    top: 64px;
+    bottom: 0;
+
+    z-index: 1;
+    height: calc(100% - 64px);
+    width: 70%;
+    border-right: 1px solid #f0f0f0;
+    background-color: #fafbfd;
+
+    .mailbox_list
+    {
+      .mailbox_list_item
+      {
+        display: block;
+        width: 100%;
+        background-color: rgb(195, 195, 195);
+        border-bottom: 1px solid white;
+
+        .mailbox_item_name
+        {
+          display: block;
+          color: #3d464a;
+          cursor: pointer;
+          font-family: 'Roboto', tahoma, arial;
+          font-size: 25px;
+          width: 100%;
+          padding: 10px;
+        }
+
+        .folder_list
+        {
+          .folder_list_item
+          {
+            border-bottom: 1px solid white;
+
+            .folder_item_name
+            {
+              display: block;
+              font-family: 'Roboto', tahoma, arial;
+              font-size: 23px;
+              color: #3d464a;
+              width: calc(100% - 25px);
+              background-color: rgb(205, 205, 205);
+              padding: 10px 0 8px 25px;
+              cursor: pointer;
+            }
+          }
+
+          .folder_list_item:last-child
+          {
+            border: none;
+          }
+        }
+      }
+    }
+  }
+
+  .mailbox_folder
+  {
+    height: auto;
+
+    .letters_list_item
+    {
+      background-color: antiquewhite;
+      display: block;
+      padding: 10px 10px 10px 20px;
+
+      width: calc(100% - 30px);
+      border-bottom: 1px solid white;
+
+      .letter_name
+      {
+        font-family: 'Lato', sans-serif;
+        font-size: 22px;
+      }
+    }
+  }
+}
