@@ -1,4 +1,4 @@
-@keyframes left_menu_open {
+@keyframes left_menu {
   from {
     left: -70%; }
   to {
@@ -7,8 +7,7 @@
   padding: 0;
   margin: 0;
   list-style-type: none;
-  text-decoration: none;
-  box-sizing: border-box; }
+  text-decoration: none; }
 
 .invisible {
   display: none; }
@@ -32,8 +31,8 @@ html, body {
     .main_container .top_bar .side_menu_button {
       position: absolute;
       display: block;
-      width: 20px;
-      height: 15px;
+      width: 35px;
+      height: 27px;
       top: 20px;
       left: 20px;
       opacity: 0.65;
@@ -46,20 +45,20 @@ html, body {
     .main_container .top_bar .top_bar_title {
       display: block;
       width: 100%;
-      font: 700 24px 'Roboto', tahoma, arial;
+      font: 700 36px 'Roboto', tahoma, arial;
       text-align: center;
       color: #656e79; }
   .main_container .side_menu {
     position: absolute;
     left: 0;
-    top: 49px;
+    top: 64px;
     bottom: 0;
     z-index: 1;
     height: calc(100% - 64px);
-    width: 88%;
+    width: 70%;
     border-right: 1px solid #f0f0f0;
     background-color: #fafbfd;
-    animation: left_menu_open 1.2s alternate; }
+    animation: left_menu 2s alternate; }
     .main_container .side_menu .mailbox_list .mailbox_list_item {
       display: block;
       width: 100%;
@@ -72,9 +71,7 @@ html, body {
         font-family: 'Roboto', tahoma, arial;
         font-size: 25px;
         width: 100%;
-        padding: 20px 0 20px 80px;
-        background: url(../images/mailbox.png) 20px center no-repeat;
-        background-size: 45px 40px; }
+        padding: 10px; }
       .main_container .side_menu .mailbox_list .mailbox_list_item .folder_list .folder_list_item {
         border-bottom: 1px solid white; }
         .main_container .side_menu .mailbox_list .mailbox_list_item .folder_list .folder_list_item .folder_item_name {
@@ -82,12 +79,10 @@ html, body {
           font-family: 'Roboto', tahoma, arial;
           font-size: 23px;
           color: #3d464a;
-          width: 100%;
-          padding: 14px 0 13px 85px;
-          cursor: pointer;
-          background: url(../images/maillist.png) 30px center no-repeat;
-          background-size: 36px 25px;
-          background-color: #cdcdcd; }
+          width: calc(100% - 25px);
+          background-color: #cdcdcd;
+          padding: 10px 0 8px 25px;
+          cursor: pointer; }
       .main_container .side_menu .mailbox_list .mailbox_list_item .folder_list .folder_list_item:last-child {
         border: none; }
   .main_container .mailbox_folder {
@@ -95,24 +90,11 @@ html, body {
     .main_container .mailbox_folder .letters_list_item {
       background-color: antiquewhite;
       display: block;
-      padding: 10px 10px 10px 5px;
-      width: 100%;
+      padding: 10px 10px 10px 20px;
+      width: calc(100% - 30px);
       border-bottom: 1px solid white; }
-      .main_container .mailbox_folder .letters_list_item .adresser_img {
-        margin: 20px 3px;
-        width: 35px;
-        height: 30px;
-        float: left; }
       .main_container .mailbox_folder .letters_list_item .letter_name {
-        display: block;
-        margin: 4px;
         font-family: 'Lato', sans-serif;
         font-size: 22px; }
-      .main_container .mailbox_folder .letters_list_item .letter_mail {
-        display: block;
-        margin: 4px;
-        font-family: 'Lato', sans-serif;
-        font-size: 22px;
-        color: black; }
 
 /*# sourceMappingURL=main1.css.map */
