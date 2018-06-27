@@ -1,0 +1,104 @@
+.main_container .top_bar {
+  padding: 10px 15px;
+  border-bottom: 1px solid #fff;
+  background: #e3e3e3 url(../images/logo.png) calc(100% - 20px) center no-repeat; }
+  .main_container .top_bar .side_menu_button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: block;
+    width: 20px;
+    height: 15px;
+    opacity: 0.65;
+    cursor: pointer; }
+    .main_container .top_bar .side_menu_button .button_image {
+      width: 100%;
+      height: 100%; }
+  .main_container .top_bar .side_menu_button:hover {
+    opacity: 0.3; }
+  .main_container .top_bar .top_bar_title {
+    display: block;
+    width: 100%;
+    font: 700 24px "Roboto", arial;
+    text-align: center;
+    color: #000; }
+
+.main_container .side_menu {
+  position: absolute;
+  left: 0;
+  top: 49px;
+  bottom: 0;
+  z-index: 1;
+  height: calc(100% - 64px);
+  width: 88%;
+  border-right: 1px solid #fff;
+  background-color: #eee;
+  animation: left_menu_open 1.2s alternate; }
+  .main_container .side_menu .mailbox_list .mailbox_list_item {
+    display: block;
+    background-color: #d4d4d4;
+    border-bottom: 1px solid #fff; }
+    .main_container .side_menu .mailbox_list .mailbox_list_item .mailbox_item_name {
+      display: block;
+      padding: 20px 0 20px 80px;
+      font-family: 'Roboto', tahoma, arial;
+      font-size: 25px;
+      color: #000;
+      background: url(../images/mailbox.png) 20px center no-repeat;
+      background-size: 45px 40px;
+      cursor: pointer; }
+    .main_container .side_menu .mailbox_list .mailbox_list_item .folder_list .folder_list_item {
+      border-bottom: 1px solid #fff; }
+      .main_container .side_menu .mailbox_list .mailbox_list_item .folder_list .folder_list_item .folder_item_name {
+        display: block;
+        padding: 14px 0 13px 85px;
+        font-family: "Roboto", arial;
+        font-size: 23px;
+        color: #000;
+        background: url(../images/maillist.png) 30px center no-repeat;
+        background-size: 36px 25px;
+        background-color: #eee;
+        cursor: pointer; }
+    .main_container .side_menu .mailbox_list .mailbox_list_item .folder_list .folder_list_item:last-child {
+      border: none; }
+
+.main_container .mail {
+  background-color: #eaeaea;
+  padding: 20px 10px; }
+  .main_container .mail p {
+    font: "Lato", sans-serif;
+    font-size: 21px; }
+  .main_container .mail img {
+    width: 90%;
+    margin: 10px 5%; }
+  .main_container .mail a {
+    text-decoration: underline; }
+
+@keyframes left_menu_open {
+  from {
+    left: -88%; }
+  to {
+    left: 0; } }
+* {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  text-decoration: none;
+  box-sizing: border-box; }
+
+.invisible {
+  display: none; }
+
+html, body {
+  height: auto;
+  min-height: 100%; }
+
+.main_container {
+  position: relative;
+  margin: 0 auto;
+  min-width: 320px;
+  max-width: 640px;
+  height: auto;
+  min-height: 100%; }
+
+/*# sourceMappingURL=main2.css.map */

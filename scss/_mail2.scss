@@ -1,0 +1,25 @@
+.main_container
+{
+	.mail
+	{
+		background-color: $mail_background_color;
+		padding: 20px 10px;
+		
+		p
+		{
+			font: $main_font;
+			font-size: 21px;
+		}
+		
+		img
+		{
+			width: 90%;
+			margin: 10px 5%;
+		}
+		
+		a
+		{
+			text-decoration: underline;
+		}
+	}
+}

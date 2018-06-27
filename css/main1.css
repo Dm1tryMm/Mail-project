@@ -1,117 +1,55 @@
-.main_container .top_bar {
-  padding: 10px 15px;
-  border-bottom: 1px solid #fff;
-  background: #e3e3e3 url(../images/logo.png) calc(100% - 20px) center no-repeat; }
-  .main_container .top_bar .side_menu_button {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    display: block;
-    width: 20px;
-    height: 15px;
-    opacity: 0.65;
-    cursor: pointer; }
-    .main_container .top_bar .side_menu_button .button_image {
-      width: 100%;
-      height: 100%; }
-  .main_container .top_bar .side_menu_button:hover {
-    opacity: 0.3; }
-  .main_container .top_bar .top_bar_title {
-    display: block;
-    width: 100%;
-    font: 700 24px "Roboto", arial;
-    text-align: center;
-    color: #000; }
+/*
+Error: File to import not found or unreadable: mail.
+       Load path: C:/Users/mitin/Desktop/Mail-project/scss
+        on line 4 of C:\Users\mitin\Desktop\Mail-project\scss\main1.scss
 
-.main_container .side_menu {
-  position: absolute;
-  left: 0;
-  top: 49px;
-  bottom: 0;
-  z-index: 1;
-  height: calc(100% - 64px);
-  width: 88%;
-  border-right: 1px solid #fff;
-  background-color: #eee;
-  animation: left_menu_open 1.2s alternate; }
-  .main_container .side_menu .mailbox_list .mailbox_list_item {
-    display: block;
-    background-color: #d4d4d4;
-    border-bottom: 1px solid #fff; }
-    .main_container .side_menu .mailbox_list .mailbox_list_item .mailbox_item_name {
-      display: block;
-      padding: 20px 0 20px 80px;
-      font-family: 'Roboto', tahoma, arial;
-      font-size: 25px;
-      color: #000;
-      background: url(../images/mailbox.png) 20px center no-repeat;
-      background-size: 45px 40px;
-      cursor: pointer; }
-    .main_container .side_menu .mailbox_list .mailbox_list_item .folder_list .folder_list_item {
-      border-bottom: 1px solid #fff; }
-      .main_container .side_menu .mailbox_list .mailbox_list_item .folder_list .folder_list_item .folder_item_name {
-        display: block;
-        padding: 14px 0 13px 85px;
-        font-family: "Roboto", arial;
-        font-size: 23px;
-        color: #000;
-        background: url(../images/maillist.png) 30px center no-repeat;
-        background-size: 36px 25px;
-        background-color: #eee;
-        cursor: pointer; }
-    .main_container .side_menu .mailbox_list .mailbox_list_item .folder_list .folder_list_item:last-child {
-      border: none; }
+1: @import 'const';
+2: @import 'top_bar1';
+3: @import 'side_menu1';
+4: @import 'mail';
+5: 
+6: @keyframes left_menu_open
+7: {
+8: 	from {left: -88%;}
+9: 	to {left: 0;}
 
-.main_container .mailbox_folder {
-  height: auto;
-  min-height: 100%; }
-  .main_container .mailbox_folder .letters_list .letters_list_item {
-    display: block;
-    padding: 10px 10px 10px 5px;
-    border-bottom: 1px solid #fff;
-    background-color: #ffede0; }
-    .main_container .mailbox_folder .letters_list .letters_list_item .addresser_image {
-      margin: 20px 15px;
-      width: 35px;
-      height: 30px;
-      float: left; }
-    .main_container .mailbox_folder .letters_list .letters_list_item .letter_name {
-      display: block;
-      margin: 4px;
-      font-family: "Lato", sans-serif;
-      font-size: 22px; }
-    .main_container .mailbox_folder .letters_list .letters_list_item .letter_mail {
-      display: block;
-      margin: 4px;
-      font-family: "Lato", sans-serif;
-      font-size: 22px;
-      color: #000; }
-
-@keyframes left_menu_open {
-  from {
-    left: -88%; }
-  to {
-    left: 0; } }
-* {
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-  text-decoration: none;
-  box-sizing: border-box; }
-
-.invisible {
-  display: none; }
-
-html, body {
-  height: auto;
-  min-height: 100%; }
-
-.main_container {
-  position: relative;
-  margin: 0 auto;
-  min-width: 320px;
-  max-width: 640px;
-  height: auto;
-  min-height: 100%; }
-
-/*# sourceMappingURL=main1.css.map */
+Backtrace:
+C:\Users\mitin\Desktop\Mail-project\scss\main1.scss:4
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:67:in `rescue in import'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:45:in `import'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:28:in `imported_file'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:37:in `css_import?'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:314:in `visit_import'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:161:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:10:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
+C:/Program Files (x86)/Koala/bin/sass:22:in `load'
+C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: mail.\A        Load path: C:/Users/mitin/Desktop/Mail-project/scss\A         on line 4 of C:\Users\mitin\Desktop\Mail-project\scss\main1.scss\A \A 1: @import 'const';\A 2: @import 'top_bar1';\A 3: @import 'side_menu1';\A 4: @import 'mail';\A 5: \A 6: @keyframes left_menu_open\A 7: {\A 8: 	from {left: -88%;}\A 9: 	to {left: 0;}"; }
