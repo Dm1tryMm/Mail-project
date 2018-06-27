@@ -1,0 +1,69 @@
+.main_container
+{
+	.block_form
+	{
+		position: relative;
+		
+		width: 300px;
+		padding: 0 10px;
+		margin: 120px auto;
+		
+		.form_autorization
+		{
+			.form_text
+			{
+				margin: 0;
+				font-family: $additional_font;
+				font-size: 20px;
+				color: $form_text_color;
+			}
+			
+			.form_element
+			{
+				width: 278px;
+				height: 50px;
+				margin-bottom: 20px;
+				padding: 0 10px;
+				
+				background-color: $form_element_color;
+				border: 1px solid $form_element_border_color;
+				transition: border-color 0.3s ease, box-shadow 0.3s ease;
+				border-radius: 5px;
+				
+				font-family: $main_font;
+				font-size: 20px;
+				color: rgba(0, 0, 0, 0.8);
+			}
+			
+			.form_element:active
+			{
+				border: 1px solid $form_element_active_color;
+				box-shadow: 0 0 5px #6a9cd4, inset 0 0 0 50px #fff;
+			}
+			
+			.incorrect
+			{
+				border-color: $button_incorrect_color;
+			}
+			
+			.button_submit
+			{
+				width: 300px;
+				padding: 13px 0 17px;
+				
+				border-radius: 5px;
+				border: 1px solid $button_form_background_color;
+				background: $button_form_background_color;
+				outline: none;
+				text-decoration: none;
+				
+				font: 400 18px $main_font;
+				color: $button_form_color;
+				line-height: 1.263;
+				text-align: center;
+				
+				cursor: pointer;
+			}
+		}
+	}
+}

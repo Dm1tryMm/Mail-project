@@ -1,0 +1,20 @@
+.main_container
+{
+	.top_bar
+	{
+		padding: 10px 15px;
+		
+		border-bottom: 1px solid $border_color;
+		
+		background: #fafbfd url(../images/logo.png) calc(100% - 20px) center no-repeat;
+		
+		.top_bar_title
+		{
+			display: block;
+			width: 100%;
+			font: 700 36px $additional_font;
+			color: #656e79;
+			text-align: center;
+		}
+	}
+}
