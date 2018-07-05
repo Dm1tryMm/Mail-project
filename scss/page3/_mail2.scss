@@ -2,6 +2,10 @@
 {
 	.mail
 	{
+		height: calc(100vh - 64px);
+		
+		overflow-y: scroll;
+		
 		background-color: $mail_background_color;
 		padding: 20px 10px;
 		

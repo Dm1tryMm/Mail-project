@@ -1,0 +1,63 @@
+.main_container
+{
+	.mailbox_folder
+	{
+		height: calc(100vh - 64px);
+		
+		overflow-y: scroll;
+		
+		.letters_list
+		{
+			height: calc(100vh - 64px);
+			
+			padding-left: 4px;
+			
+			.letters_list_item
+			{
+				display: block;
+				
+				padding: 10px 10px 10px 5px;
+				
+				border-bottom: 1px solid $border_color;
+				
+				background-color: $folder_background_color;
+				
+				.letter_addresser
+				{
+					margin: 4px;
+					
+					font-family: $main_font;
+					font-size: 20px;
+					color: $dark_font_color;
+				}
+				
+				.letter_date
+				{
+					float: right;
+					
+					font-family: $main_font;
+					font-size: 20px;
+					color: $dark_font_color;
+				}
+				
+				.letter_header
+				{
+					margin: 4px;
+					
+					font-family: $main_font;
+					font-size: 20px;
+					color: $dark_font_color;
+				}
+				
+				.letter_text
+				{
+					margin: 4px;
+					
+					font-family: $main_font;
+					font-size: 20px;
+					color: $bright_font_color;
+				}
+			}
+		}
+	}
+}

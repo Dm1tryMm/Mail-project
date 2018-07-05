@@ -1,13 +1,8 @@
-@import 'const';
+@import '../const';
 @import 'top_bar1';
 @import 'side_menu1';
 @import 'mailbox_folder1';
-
-@keyframes left_menu_open
-{
-	from {left: -88%;}
-	to {left: 0;}
-}
+@import 'animations';
 
 *
 {
@@ -27,13 +22,14 @@
 
 html, body
 {
-	height: auto;
-	min-height: 100%;
+	height: 100%;
 }
 
 .main_container
 {
 	position: relative;
+	
+	overflow-x: hidden;
 	
 	margin: 0 auto;
 	min-width: 320px;

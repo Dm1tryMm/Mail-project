@@ -1,0 +1,47 @@
+.main_container
+{
+	.top_bar
+	{
+		padding: 10px 15px;
+		
+		border-bottom: 1px solid $border_color;
+		background: $top_bar_background_color url(../images/logo.png) calc(100% - 20px) center no-repeat;
+		
+		.back_button
+		{
+			position: absolute;
+			top: 12px;
+			left: 20px;
+			
+			display: block;
+			width: 30px;
+			height: 25px;
+			opacity: 0.65;
+			
+			cursor: pointer;
+			
+			.button_image
+			{
+				width: 100%;
+				height: 100%;
+			}
+		}
+		
+		
+		.side_menu_button:hover
+		{
+			opacity: 0.3;
+		}
+		
+		
+		.top_bar_title
+		{
+			display: block;
+			width: 100%;
+			
+			font: 700 24px $additional_font;
+			text-align: center;
+			color: $dark_font_color;
+		}
+	}
+}

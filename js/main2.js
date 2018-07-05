@@ -1,7 +1,6 @@
 window.onload = onWindowLoaded;
 
 function onWindowLoaded() {
-    checkBoxes();
     tryToListen('side_menu_button', 'click', changeStateOfMenu);
     checkSwipe();
     externalLinks();
@@ -41,17 +40,6 @@ function changeState() {
         secondParent[0].classList.remove('invisible');
     } else {
         secondParent[0].classList.add('invisible');
-    }
-}
-
-function checkBoxes() {
-    var firstParent = getById('first_parent');
-    var firstChildren = getByClassName(firstParent, 'mailbox_list_item');
-    for (var i = 0; i < firstChildren.length; ++i) {
-        var secondParrentButton = getByClassName(firstChildren[i], 'mailbox_item_name');
-        if (secondParrentButton[0]) {
-            secondParrentButton[0].addEventListener('click', changeState);
-        }
     }
 }
 

@@ -23,19 +23,26 @@ function getByClassName(parentElement, childClass) {
 
 function changeStateOfMenu(event) {
     var menu = getById('side_menu');
-    if (menu.classList.contains('invisible')){
-        menu.classList.remove('invisible');
+    if (menu.classList.contains('close')){
+        menu.classList.add('open');
+        menu.classList.remove('close');
     } else {
-        menu.classList.add('invisible');
+        menu.classList.add('close');
+        menu.classList.remove('open');
     }
 }
 
 function changeState() {
+    event.preventDefault();
     var secondParent = getByClassName(this.parentNode, 'folder_list');
-    if (secondParent[0].classList.contains('invisible')){
-        secondParent[0].classList.remove('invisible');
+    if (secondParent[0].classList.contains('close')) {
+        var secondChildren = getByClassName(this.parentNode, 'folder_list_item');
+        var maxHeight = (secondChildren.length * secondChildren[0].offsetHeight) - 1;
+        secondParent[0].style.height = maxHeight + 'px';
+        secondParent[0].classList.remove('close');
     } else {
-        secondParent[0].classList.add('invisible');
+        secondParent[0].style.height = 0;
+        secondParent[0].classList.add('close');
     }
 }
 
@@ -69,7 +76,7 @@ function checkSwipe() {
         var swipeX = endPozX - startPozX;
         var swipeY = endPozY - startPozY;
         var menu = getById('side_menu');
-        if ((Math.abs(swipeY) < 50) && (((swipeX > 100) && (menu.classList.contains('invisible'))) || ((swipeX < -100) && !(menu.classList.contains('invisible'))))) {
+        if ((Math.abs(swipeY) < 50) && (((swipeX > 100) && (menu.classList.contains('close'))) || ((swipeX < -100) && !(menu.classList.contains('close'))))) {
             changeStateOfMenu();
         }
     })

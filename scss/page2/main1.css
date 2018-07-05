@@ -30,6 +30,7 @@
   top: 50px;
   bottom: 0;
   z-index: 1;
+  height: calc(100% - 64px);
   width: 88%;
   border-right: 1px solid #eae9eb;
   background-color: #fff; }
@@ -48,10 +49,9 @@
       background-size: 45px 40px;
       cursor: pointer; }
     .main_container .side_menu .mailbox_list .mailbox_list_item .folder_list {
-      height: 0;
+      height: 100%;
       animation: folder_open 1.2s alternate;
-      padding-left: 30px;
-      transition: .8s; }
+      padding-left: 30px; }
       .main_container .side_menu .mailbox_list .mailbox_list_item .folder_list .folder_list_item {
         border-bottom: 1px solid #eae9eb; }
         .main_container .side_menu .mailbox_list .mailbox_list_item .folder_list .folder_list_item .folder_item_name {
@@ -65,9 +65,7 @@
           background-color: #fff;
           cursor: pointer; }
       .main_container .side_menu .mailbox_list .mailbox_list_item .folder_list .folder_list_item:last-child {
-        border-bottom: none; }
-  .main_container .side_menu .mailbox_list .mailbox_list_item:first-child .folder_list {
-    height: auto; }
+        border: none; }
 .main_container .side_menu.open {
   animation: left_menu_open 1.2s alternate; }
 .main_container .side_menu.close {
@@ -97,6 +95,7 @@
         color: #000; }
       .main_container .mailbox_folder .letters_list .letters_list_item .letter_header {
         margin: 4px;
+        clear: both;
         font-family: "Lato", sans-serif;
         font-size: 20px;
         color: #000; }
@@ -118,14 +117,14 @@
     left: -88%; } }
 @keyframes folder_open {
   from {
-    max-height: 0; }
+    height: 0; }
   to {
-    max-height: 1005px; } }
+    height: auto; } }
 @keyframes folder_close {
   from {
-    max-height: 1005px; }
+    height: auto; }
   to {
-    max-height: 0; } }
+    height: 0; } }
 * {
   padding: 0;
   margin: 0;

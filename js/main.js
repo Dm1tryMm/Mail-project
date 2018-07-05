@@ -36,8 +36,20 @@ function checkFields() {
     return notEmpty;
 }
 
+function closeModalWindow() {
+    var modalBackground = getById('modal_window');
+    modalBackground.style.display = 'none';
+    var passwordField = getById('password');
+    passwordField.value = '';
+}
+
 function checkForm() {
     if (!checkFields()) {
         event.preventDefault();
+    } else {
+        event.preventDefault();
+        var modalBackground = getById('modal_window');
+        modalBackground.style.display = 'flex';
+        tryToListen('modal_window', 'click', closeModalWindow);
     }
 }
