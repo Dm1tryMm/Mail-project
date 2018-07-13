@@ -2,20 +2,18 @@
 {
 	.top_bar
 	{
-		padding: 10px 15px;
-		
 		border-bottom: 1px solid $border_color;
-		background: $top_bar_background_color url(../images/logo.png) calc(100% - 20px) center no-repeat;
+		background-color: $top_bar_background_color;
 		
 		.side_menu_button
 		{
 			position: absolute;
-			top: 20px;
-			left: 20px;
+			top: 19px;
+			left: 17px;
 			
 			display: block;
-			width: 20px;
-			height: 15px;
+			width: 28px;
+			height: 23px;
 			opacity: 0.65;
 			
 			cursor: pointer;
@@ -34,13 +32,19 @@
 		}
 		
 		
-		.top_bar_title
+		.folder_name
 		{
-			display: block;
-			width: 100%;
+			padding: 9px 0 0 60px;
 			
-			font: 700 24px $additional_font;
-			text-align: center;
+			font: 700 16px $additional_font;
+			color: $dark_font_color;
+		}
+		
+		.folder_adress
+		{
+			padding: 6px 0 5px 60px;
+			
+			font: 700 15px $additional_font;
 			color: $dark_font_color;
 		}
 	}

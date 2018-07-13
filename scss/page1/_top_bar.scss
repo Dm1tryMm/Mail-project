@@ -2,19 +2,15 @@
 {
 	.top_bar
 	{
-		padding: 10px 15px;
-		
-		border-bottom: 1px solid $border_color;
-		
-		background: #fafbfd url(../images/logo.png) calc(100% - 20px) center no-repeat;
+		background-color: $dark_background_color;
 		
 		.top_bar_title
 		{
-			display: block;
-			width: 100%;
-			font: 700 36px $additional_font;
-			color: #656e79;
-			text-align: center;
+			background: url(../images/logo.png) 0 center no-repeat;
+			font: 700 21px $additional_font;
+			color: #343c40;
+			margin-left: calc(50% - 51px);
+			padding: 16px 0 15px 38px;
 		}
 	}
 }

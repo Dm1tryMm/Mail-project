@@ -3,7 +3,7 @@
     <head>
         <meta content="width=device-width, user-scalable=yes, initial-scale=1.0, minimum-scale=1.0" name="viewport">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Mail</title>
+        <title>iSpring</title>
         <link rel="stylesheet" href="css/main.css">
         <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
@@ -12,20 +12,19 @@
     <body>
         <div class="main_container">
             <div class="top_bar">
-                <span class="top_bar_title">Mail</span>
+                <p class="top_bar_title">iSpring</p>
             </div>
-            <div class="block_form">
-                <form class="form_autorization">
-                    <span class="form_text">Логин</span>
-                    <input class="form_element" type="text" id="login" name="login">
-                    <span class="form_text">Пароль</span>
-                    <input class="form_element" type="password" id="password" name="password">
-                    <input type="submit" value="Войти" class="button_submit" id="submit_form">
-                </form>
-            </div>
-            <div class="modal_background" id="modal_window">
-                <div class="block_error">
-                    <a class="error_message">Вы ввели неправильную пару логин-пароль.</a>
+            <div class="content">
+                <div class="block_form">
+                    <h1 class="page_title">Вход в личный кабинет</h1>
+                    <p class="error_message">Неверный логин или пароль. Проверьте правильность введенных данных.</p>
+                    <form class="form_autorization">
+                        <p class="form_text">Логин</p>
+                        <input class="form_element" type="text" id="login" name="login">
+                        <p class="form_text">Пароль</p>
+                        <input class="form_element" type="password" id="password" name="password">
+                        <input type="submit" value="Войти" class="button_submit" id="submit_form">
+                    </form>
                 </div>
             </div>
         </div>

@@ -1,14 +1,13 @@
 .main_container .top_bar {
-  padding: 10px 15px;
   border-bottom: 1px solid #eae9eb;
-  background: #f6f6f6 url(../images/logo.png) calc(100% - 20px) center no-repeat; }
+  background-color: #f6f6f6; }
   .main_container .top_bar .side_menu_button {
     position: absolute;
-    top: 20px;
-    left: 20px;
+    top: 19px;
+    left: 17px;
     display: block;
-    width: 20px;
-    height: 15px;
+    width: 28px;
+    height: 23px;
     opacity: 0.65;
     cursor: pointer; }
     .main_container .top_bar .side_menu_button .button_image {
@@ -16,23 +15,42 @@
       height: 100%; }
   .main_container .top_bar .side_menu_button:hover {
     opacity: 0.3; }
-  .main_container .top_bar .top_bar_title {
-    display: block;
-    width: 100%;
-    font: 700 24px "Roboto", arial;
-    text-align: center;
+  .main_container .top_bar .folder_name {
+    padding: 9px 0 0 60px;
+    font: 700 16px "Roboto", arial;
+    color: #000; }
+  .main_container .top_bar .folder_adress {
+    padding: 6px 0 5px 60px;
+    font: 700 15px "Roboto", arial;
     color: #000; }
 
 .main_container .side_menu {
   position: absolute;
   overflow-y: scroll;
   left: 0;
-  top: 50px;
+  top: 0;
   bottom: 0;
   z-index: 1;
-  width: 88%;
-  border-right: 1px solid #eae9eb;
+  width: 100%;
   background-color: #fff; }
+  .main_container .side_menu .side_menu_header {
+    position: relative;
+    background-color: #f6f5f7;
+    border-bottom: 1px solid #eae9eb; }
+    .main_container .side_menu .side_menu_header .back_button {
+      position: absolute;
+      top: 12px;
+      left: 10px;
+      width: 40px;
+      height: 40px; }
+      .main_container .side_menu .side_menu_header .back_button .arrow_left {
+        width: 100%;
+        height: 100%; }
+    .main_container .side_menu .side_menu_header .side_menu_title {
+      width: 100%;
+      font: 700 18.5px "Roboto", arial;
+      text-align: center;
+      padding: 21px 0 12px; }
   .main_container .side_menu .mailbox_list .mailbox_list_item {
     overflow: hidden;
     display: block;
@@ -40,27 +58,32 @@
     border-bottom: 1px solid #eae9eb; }
     .main_container .side_menu .mailbox_list .mailbox_list_item .mailbox_item_name {
       display: block;
-      padding: 20px 0 20px 80px;
+      padding: 10px 0 11px 56px;
       font-family: "Roboto", arial;
-      font-size: 25px;
+      font-size: 17px;
+      font-weight: 700;
+      letter-spacing: .18px;
       color: #000;
-      background: url(../images/mailbox.png) 20px center no-repeat;
+      background: #efeff5 20px center no-repeat;
       background-size: 45px 40px;
-      cursor: pointer; }
+      cursor: pointer;
+      border-bottom: 1px solid #eae9eb; }
     .main_container .side_menu .mailbox_list .mailbox_list_item .folder_list {
       height: 0;
       animation: folder_open 1.2s alternate;
-      padding-left: 30px;
+      padding-left: 58px;
       transition: .8s; }
       .main_container .side_menu .mailbox_list .mailbox_list_item .folder_list .folder_list_item {
         border-bottom: 1px solid #eae9eb; }
         .main_container .side_menu .mailbox_list .mailbox_list_item .folder_list .folder_list_item .folder_item_name {
           display: block;
-          padding: 14px 0 13px 75px;
+          padding: 12px 0 12px 1px;
           font-family: "Roboto", arial;
-          font-size: 23px;
+          font-size: 16px;
+          font-weight: 700;
+          letter-spacing: .67px;
           color: #000;
-          background: url(../images/maillist.png) 20px center no-repeat;
+          background: 20px center no-repeat;
           background-size: 36px 25px;
           background-color: #fff;
           cursor: pointer; }
@@ -72,60 +95,64 @@
   animation: left_menu_open 1.2s alternate; }
 .main_container .side_menu.close {
   animation: left_menu_close 1.2s alternate;
-  left: -88%; }
+  left: -100%; }
 
 .main_container .mailbox_folder {
   height: calc(100vh - 64px);
   overflow-y: scroll; }
   .main_container .mailbox_folder .letters_list {
-    height: calc(100vh - 64px);
-    padding-left: 4px; }
+    height: calc(100vh - 64px); }
     .main_container .mailbox_folder .letters_list .letters_list_item {
       display: block;
-      padding: 10px 10px 10px 5px;
+      padding: 8px 26px 4px;
       border-bottom: 1px solid #eae9eb;
       background-color: #fff; }
       .main_container .mailbox_folder .letters_list .letters_list_item .letter_addresser {
-        margin: 4px;
+        display: block;
+        width: calc(100% - 79px);
+        height: 23px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
         font-family: "Lato", sans-serif;
-        font-size: 20px;
+        font-size: 19px;
         color: #000; }
       .main_container .mailbox_folder .letters_list .letters_list_item .letter_date {
+        display: block;
+        margin-top: -21px;
         float: right;
         font-family: "Lato", sans-serif;
-        font-size: 20px;
-        color: #000; }
+        font-size: 16px;
+        color: #8e8f94; }
       .main_container .mailbox_folder .letters_list .letters_list_item .letter_header {
-        margin: 4px;
+        display: block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
         font-family: "Lato", sans-serif;
-        font-size: 20px;
+        font-size: 17px;
         color: #000; }
       .main_container .mailbox_folder .letters_list .letters_list_item .letter_text {
-        margin: 4px;
+        display: block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
         font-family: "Lato", sans-serif;
-        font-size: 20px;
+        font-size: 17px;
         color: #8e8f94; }
 
 @keyframes left_menu_open {
   from {
-    left: -88%; }
+    left: -100%; }
   to {
     left: 0; } }
 @keyframes left_menu_close {
   from {
     left: 0; }
   to {
-    left: -88%; } }
-@keyframes folder_open {
-  from {
-    max-height: 0; }
-  to {
-    max-height: 1005px; } }
-@keyframes folder_close {
-  from {
-    max-height: 1005px; }
-  to {
-    max-height: 0; } }
+    left: -100%; } }
 * {
   padding: 0;
   margin: 0;

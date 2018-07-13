@@ -1,23 +1,11 @@
 @keyframes left_menu_open
 {
-	from {left: -88%;}
+	from {left: -100%;}
 	to {left: 0;}
 }
 
 @keyframes left_menu_close
 {
 	from {left: 0;}
-	to {left: -88%;}
-}
-
-@keyframes folder_open
-{
-	from {max-height: 0;}
-	to {max-height: 1005px;}
-}
-
-@keyframes folder_close
-{
-	from {max-height: 1005px;}
-	to {max-height: 0;}
+	to {left: -100%;}
 }

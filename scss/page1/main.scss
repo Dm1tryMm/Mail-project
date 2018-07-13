@@ -1,12 +1,12 @@
 @import '../const';
 @import 'top_bar';
 @import 'block_form';
-@import 'modal_window';
 
 *
 {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 html, body
