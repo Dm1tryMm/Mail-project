@@ -3,6 +3,7 @@ window.onload = onWindowLoaded;
 function onWindowLoaded() {
     checkBoxes();
     tryToListen('side_menu_button', 'click', changeStateOfMenu);
+    tryToListen('back_button', 'click', changeStateOfMenu);
     checkSwipe();
 }
 
