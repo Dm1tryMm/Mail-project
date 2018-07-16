@@ -23,11 +23,11 @@
 			{
 				position: absolute;
 				
-				top: 12px;
-				left: 10px;
+				top: 17px;
+				left: 13px;
 				
-				width: 40px;
-				height: 40px;
+				width: 34px;
+				height: 30px;
 				
 				.arrow_left
 				{
@@ -65,8 +65,8 @@
 					letter-spacing: .18px;
 					color: $dark_font_color;
 					
-					background: #efeff5 /*url(../images/mailbox.png)*/ 20px center no-repeat;
-					background-size: 45px 40px;
+					background: #efeff5 url(../images/mail_image.svg) 15px center no-repeat;
+					background-size: 31px 30px;
 					
 					cursor: pointer;
 					
@@ -77,18 +77,20 @@
 				{
 					height: 0;
 					animation: folder_open 1.2s alternate;
-					padding-left: 58px;
 					transition: .8s;
 					
 					.folder_list_item
 					{
-						border-bottom: 1px solid $border_color;
+						border-bottom: 1px solid #fff;
 						
 						.folder_item_name
 						{
+							position: relative;
+							
+							width: 100%;
 							display: block;
 							
-							padding: 12px 0 12px 1px;
+							padding: 12px 0 12px 59px;
 							
 							font-family: $additional_font;
 							font-size: 16px;
@@ -96,11 +98,58 @@
 							letter-spacing: .67px;
 							color: $dark_font_color;
 							
-							background: /*url(../images/maillist.png)*/ 20px center no-repeat;
-							background-size: 36px 25px;
+							background: url(../images/other_images.svg) 15px center no-repeat;
+							background-size: 28px 25px;
 							background-color: $folder_item_background_color;
 							
 							cursor: pointer;
+						}
+						
+						.folder_item_name:after
+						{
+							content: '';
+							position: absolute;
+							width: calc(100% - 58px);
+							margin-left: 58px;
+							height: 1px;
+							background-color: $border_color;
+							top: 43px;
+							left: 0;
+						}
+						
+						.inbox
+						{
+							background-image: url(../images/inbox.svg);
+						}
+						
+						.high
+						{
+							background-image: url(../images/high_priority.svg);
+						}
+						
+						.outbox
+						{
+							background-image: url(../images/outbox.svg);
+						}
+						
+						.sent
+						{
+							background-image: url(../images/sent.svg);
+						}
+						
+						.errors
+						{
+							background-image: url(../images/errors.svg);
+						}
+						
+						.spam
+						{
+							background-image: url(../images/spam.svg);
+						}
+						
+						.trash
+						{
+							background-image: url(../images/trash.svg);
 						}
 					}
 					

@@ -3,16 +3,17 @@
   background-color: #f6f6f6; }
   .main_container .top_bar .side_menu_button {
     position: absolute;
-    top: 19px;
-    left: 17px;
+    top: 9px;
+    left: 9px;
     display: block;
-    width: 28px;
-    height: 23px;
+    width: 43px;
+    height: 43px;
     opacity: 0.65;
     cursor: pointer; }
     .main_container .top_bar .side_menu_button .button_image {
       width: 100%;
-      height: 100%; }
+      height: 100%;
+      opacity: 0.5; }
   .main_container .top_bar .side_menu_button:hover {
     opacity: 0.3; }
   .main_container .top_bar .folder_name {
@@ -39,10 +40,10 @@
     border-bottom: 1px solid #eae9eb; }
     .main_container .side_menu .side_menu_header .back_button {
       position: absolute;
-      top: 12px;
-      left: 10px;
-      width: 40px;
-      height: 40px; }
+      top: 17px;
+      left: 13px;
+      width: 34px;
+      height: 30px; }
       .main_container .side_menu .side_menu_header .back_button .arrow_left {
         width: 100%;
         height: 100%; }
@@ -64,29 +65,53 @@
       font-weight: 700;
       letter-spacing: .18px;
       color: #000;
-      background: #efeff5 20px center no-repeat;
-      background-size: 45px 40px;
+      background: #efeff5 url(../images/mail_image.svg) 15px center no-repeat;
+      background-size: 31px 30px;
       cursor: pointer;
       border-bottom: 1px solid #eae9eb; }
     .main_container .side_menu .mailbox_list .mailbox_list_item .folder_list {
       height: 0;
       animation: folder_open 1.2s alternate;
-      padding-left: 58px;
       transition: .8s; }
       .main_container .side_menu .mailbox_list .mailbox_list_item .folder_list .folder_list_item {
-        border-bottom: 1px solid #eae9eb; }
+        border-bottom: 1px solid #fff; }
         .main_container .side_menu .mailbox_list .mailbox_list_item .folder_list .folder_list_item .folder_item_name {
+          position: relative;
+          width: 100%;
           display: block;
-          padding: 12px 0 12px 1px;
+          padding: 12px 0 12px 59px;
           font-family: "Roboto", arial;
           font-size: 16px;
           font-weight: 700;
           letter-spacing: .67px;
           color: #000;
-          background: 20px center no-repeat;
-          background-size: 36px 25px;
+          background: url(../images/other_images.svg) 15px center no-repeat;
+          background-size: 28px 25px;
           background-color: #fff;
           cursor: pointer; }
+        .main_container .side_menu .mailbox_list .mailbox_list_item .folder_list .folder_list_item .folder_item_name:after {
+          content: '';
+          position: absolute;
+          width: calc(100% - 58px);
+          margin-left: 58px;
+          height: 1px;
+          background-color: #eae9eb;
+          top: 43px;
+          left: 0; }
+        .main_container .side_menu .mailbox_list .mailbox_list_item .folder_list .folder_list_item .inbox {
+          background-image: url(../images/inbox.svg); }
+        .main_container .side_menu .mailbox_list .mailbox_list_item .folder_list .folder_list_item .high {
+          background-image: url(../images/high_priority.svg); }
+        .main_container .side_menu .mailbox_list .mailbox_list_item .folder_list .folder_list_item .outbox {
+          background-image: url(../images/outbox.svg); }
+        .main_container .side_menu .mailbox_list .mailbox_list_item .folder_list .folder_list_item .sent {
+          background-image: url(../images/sent.svg); }
+        .main_container .side_menu .mailbox_list .mailbox_list_item .folder_list .folder_list_item .errors {
+          background-image: url(../images/errors.svg); }
+        .main_container .side_menu .mailbox_list .mailbox_list_item .folder_list .folder_list_item .spam {
+          background-image: url(../images/spam.svg); }
+        .main_container .side_menu .mailbox_list .mailbox_list_item .folder_list .folder_list_item .trash {
+          background-image: url(../images/trash.svg); }
       .main_container .side_menu .mailbox_list .mailbox_list_item .folder_list .folder_list_item:last-child {
         border-bottom: none; }
   .main_container .side_menu .mailbox_list .mailbox_list_item:first-child .folder_list {
